@@ -1,2 +1,2 @@
-# memory-management
-Memory management cheatsheet for C/C++
+# Memory management cheatsheet for C/C++
+
