@@ -8,14 +8,14 @@ int main()
     auto heap_ptr = std::make_unique<int>(5);
     
     // Memory address of the dynamically allocated location on the heap
-    std::cout << heap_ptr << std::endl;
+    std::cout << "Heap mem loc: " << heap_ptr << std::endl;
     
     // Value stored at this location on heap
-    std::cout << *heap_ptr << std::endl;
+    std::cout << "Value heap: " << *heap_ptr << std::endl;
     
     // Change the value at the memory location managed by the unique_ptr
     *heap_ptr = 6;
-    std::cout << *heap_ptr << std::endl;
+    std::cout << "Value heap new: " << *heap_ptr << std::endl;
     
     // There is no need to manually free heap memory in this case.
     // The memory will be automatically released when heap_ptr goes out of scope,
